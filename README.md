@@ -12,4 +12,4 @@ Applications
 2. Getting data from client side
 3. Making chat application
 
-Do give your feedback.
+Do give your feedback on zahid_mak@yahoo.co.in
