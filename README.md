@@ -1,8 +1,8 @@
 server-push
 ===========
-There has always been problem for pushing data from server side to client side. Here is the solution using web sockets.
+There has always been problem for pushing data from server side to client side. Here is the solution using HTML 5 web sockets and python.
 This is plug and play kind of websocket server which can push data to the client side(vice-versa).
-Prerequisite: tornado webserver install using following command in the cmd
+Prerequisite: python tornado webserver. Install using following command in the cmd prompt
 pip install tornado OR easy_install tornado
 
 For detail see server-push.pdf
