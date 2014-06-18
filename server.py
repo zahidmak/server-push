@@ -20,7 +20,7 @@ class WSHandler(tornado.websocket.WebSocketHandler):
     def on_close(self):
         obj = SessionManagement()
         obj.deletesession(self)#deleting web socket object
-        print 'connection closed'
+        print clients
 
 
 class SessionManagement():
@@ -29,15 +29,13 @@ class SessionManagement():
         userid = obj.get_argument("userid")
         componentid = obj.get_argument("compid")
         clients.append({"wsobj":obj, "userid":userid, "compid":componentid})
-        for w in clients:
-            print w
+        
     #Delete session from array when client refreshes the page or closes the page    
     def deletesession(self, obj):
         for temp in clients:
-            if cmp(obj, temp['wsobj']):
+            if (obj==temp['wsobj']):
                 clients.remove(temp)
-        for w in clients:
-            print w
+        
             
 class PushToUser(tornado.web.RequestHandler):
     def get(self):
