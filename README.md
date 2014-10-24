@@ -79,7 +79,7 @@ Uses
     <u>: Understanding server side code(server.py)</u>
 </p>
 <div>
-    <pre>
+    <samp>
 from tornado import httpserver
 import tornado.websocket
 import tornado.ioloop
@@ -147,7 +147,7 @@ if __name__ == "__main__":
     http_server.listen(8888)
     tornado.ioloop.IOLoop.instance().start()
 
-		</pre>
+		</samp>
     <u>Step 4: Sending message to client using REST</u>
 </p>
 <p>
