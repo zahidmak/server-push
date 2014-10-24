@@ -27,8 +27,8 @@ Uses
 </p>
 <div>
     <p>
-        <em>pip install tornado</em>
-        OR <em>easy_install tornado</em>
+        <code>pip install tornado</code>
+        OR <code>easy_install tornado</code>
     </p>
 </div>
 <p>
