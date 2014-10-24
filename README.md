@@ -80,7 +80,7 @@ Uses
 </p>
 <div>
     <code>
-       from tornado import httpserver
+from tornado import httpserver
 import tornado.websocket
 import tornado.ioloop
 import tornado.web
