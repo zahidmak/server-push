@@ -45,46 +45,44 @@ Uses
     <u>: Copy and paste the below code on client’s HTML page</u>
 </p>
 <div>
-<code>
-<script>
-    $(document).ready(function () {
+    <pre>
 
-        var ws;
-        var host = '192.168.1.1'; //server IP
-        var port = '8888'; //server port
-        var uri = 'ws'; //websocket uri
-        ws = new WebSocket("ws://" + host + ":" + port + uri); //create web socket object
+            $(document).ready(function () {
 
-        //Called when connection is established with server
-        ws.onopen = function (evt) {
-            alert("Connection open");
-        };
+                var ws;
+                var host = '192.168.1.1'; //server IP
+                var port = '8888'; //server port
+                var uri = 'ws'; //websocket uri
+                ws = new WebSocket("ws://" + host + ":" + port + uri); //create web socket object
 
-        //Called when message is sent from server
-        ws.onmessage = function (evt) {
-            alert("message received: " + evt.data)
-        };
+                //Called when connection is established with server
+                ws.onopen = function (evt) {
+                    alert("Connection open");
+                };
 
-        //Called when connection is closed from server
-        ws.onclose = function (evt) {
-            alert("Connection close");
-        };
-    });
-</script>
+                //Called when message is sent from server
+                ws.onmessage = function (evt) {
+                    alert("message received: " + evt.data)
+                };
 
-		</code>
+                //Called when connection is closed from server
+                ws.onclose = function (evt) {
+                    alert("Connection close");
+                };
+            });
+     
+    </pre>
 </div>
 <p>
     <strong><u>Step 3</u></strong>
     <u>: Understanding server side code(server.py)</u>
 </p>
 <div>
-    <samp>
+    <pre>
 from tornado import httpserver
 import tornado.websocket
 import tornado.ioloop
 import tornado.web
-
 clients = []
 userid = 0
 class WSHandler(tornado.websocket.WebSocketHandler):
@@ -103,8 +101,6 @@ class WSHandler(tornado.websocket.WebSocketHandler):
         obj = SessionManagement()
         obj.deletesession(self)#deleting web socket object
         print 'connection closed'
-
-
 class SessionManagement():
     #Create session and stores into array
     def createsession(self, obj):
@@ -147,21 +143,23 @@ if __name__ == "__main__":
     http_server.listen(8888)
     tornado.ioloop.IOLoop.instance().start()
 
-		</samp>
+
+    </pre>
     <u>Step 4: Sending message to client using REST</u>
-</p>
-<p>
-    - Push message to specific user
-</p>
-<p>
-    <img src="file:///C:\Users\Zahid\AppData\Local\Temp\msohtmlclip1\01\clip_image002.jpg" height="397" width="813"/>
-</p>
-<p>
-    - Push message to all users
-</p>
-<p>
-    <img src="file:///C:\Users\Zahid\AppData\Local\Temp\msohtmlclip1\01\clip_image004.jpg" height="434" width="841"/>
-</p>
-<p>
-    Done!!!!!
-</p>
+   
+    <p>
+        - Push message to specific user
+    </p>
+    <p>
+        <img src="doc/images/pushToUser.jpg" height="397" width="813" />
+    </p>
+    <p>
+        - Push message to all users
+    </p>
+    <p>
+        <img src="doc/images/pushToAll.jpg" height="434" width="841" />
+    </p>
+    <p>
+        Done!!!!!
+    </p>
+</div>
