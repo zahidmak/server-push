@@ -44,8 +44,8 @@ Uses
     <strong><u>Step 2</u></strong>
     <u>: Copy and paste the below code on client’s HTML page</u>
 </p>
-<div>
-    ```javascript
+<code>
+  
 
             $(document).ready(function () {
 
@@ -71,14 +71,14 @@ Uses
                 };
             });
      
-   ```
-</div>
+ 
+</code>
 <p>
     <strong><u>Step 3</u></strong>
     <u>: Understanding server side code(server.py)</u>
 </p>
-<div>
-    ```python
+<code>
+
 from tornado import httpserver
 import tornado.websocket
 import tornado.ioloop
@@ -144,8 +144,8 @@ if __name__ == "__main__":
     tornado.ioloop.IOLoop.instance().start()
 
 
-    ```
-    </div>
+
+    </code>
     <u>Step 4: Sending message to client using REST</u>
    
     <p>
