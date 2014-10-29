@@ -44,7 +44,7 @@ Uses
     <strong><u>Step 2</u></strong>
     <u>: Copy and paste the below code on client’s HTML page</u>
 </p>
-<div>
+
     ```javascript
 
             $(document).ready(function () {
@@ -72,12 +72,12 @@ Uses
             });
      
    ```
-</div>
+
 <p>
     <strong><u>Step 3</u></strong>
     <u>: Understanding server side code(server.py)</u>
 </p>
-<div>
+
     ```python
 from tornado import httpserver
 import tornado.websocket
