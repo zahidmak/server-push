@@ -20,8 +20,8 @@ Uses
 </p>
 <p>
     This is plug and play kind of websocket server which can push data to the client side and vice-versa.
-</p>
-<p>
+<br>
+<br>
     <strong>Prerequisite</strong>
     : tornado webserver. Install using following command in the cmd line
 </p>
