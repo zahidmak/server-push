@@ -44,7 +44,7 @@ Uses
     <strong><u>Step 2</u></strong>
     <u>: Copy and paste the below code on client’s HTML page</u>
 </p>
-<pre style="border:1px solid black;">
+<pre >
   
 
             $(document).ready(function () {
@@ -77,7 +77,7 @@ Uses
     <strong><u>Step 3</u></strong>
     <u>: Understanding server side code(server.py)</u>
 </p>
-<pre style="border:1px solid black;">
+<pre >
 
 from tornado import httpserver
 import tornado.websocket
@@ -163,4 +163,4 @@ if __name__ == "__main__":
     <p>
         Done!!!!!
     </p>
-</div>
+
