@@ -45,7 +45,7 @@ Uses
     <u>: Copy and paste the below code on client’s HTML page</u>
 </p>
 <div>
-    <pre>
+    ```
 
             $(document).ready(function () {
 
@@ -71,7 +71,7 @@ Uses
                 };
             });
      
-    </pre>
+   ```
 </div>
 <p>
     <strong><u>Step 3</u></strong>
