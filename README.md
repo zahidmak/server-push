@@ -45,7 +45,7 @@ Uses
     <u>: Copy and paste the below code on client’s HTML page</u>
 </p>
 <div>
-    ```
+    ```javascript
 
             $(document).ready(function () {
 
@@ -78,7 +78,7 @@ Uses
     <u>: Understanding server side code(server.py)</u>
 </p>
 <div>
-    <pre>
+    ```python
 from tornado import httpserver
 import tornado.websocket
 import tornado.ioloop
@@ -144,7 +144,7 @@ if __name__ == "__main__":
     tornado.ioloop.IOLoop.instance().start()
 
 
-    </pre>
+    ```
     <u>Step 4: Sending message to client using REST</u>
    
     <p>
