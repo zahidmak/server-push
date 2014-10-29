@@ -145,22 +145,22 @@ if __name__ == "__main__":
 
 
 
-    </pre>
-    <u>Step 4: Sending message to client using REST</u>
+</pre>
+<u>Step 4: Sending message to client using REST</u>
    
-    <p>
-        - Push message to specific user
-    </p>
-    <p>
-        <img src="doc/images/pushToUser.jpg" height="397" width="813" />
-    </p>
-    <p>
+<p>
+       - Push message to specific user
+</p>
+<p>
+       <img src="doc/images/pushToUser.jpg" height="397" width="813" /> 
+</p>
+<p>
         - Push message to all users
-    </p>
-    <p>
+</p>
+<p>
         <img src="doc/images/pushToAll.jpg" height="434" width="841" />
-    </p>
-    <p>
+</p>
+<p>
         Done!!!!!
-    </p>
+</p>
 
