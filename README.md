@@ -44,7 +44,7 @@ Uses
     <strong><u>Step 2</u></strong>
     <u>: Copy and paste the below code on client’s HTML page</u>
 </p>
-<code>
+<pre>
   
 
             $(document).ready(function () {
@@ -72,12 +72,12 @@ Uses
             });
      
  
-</code>
+</pre>
 <p>
     <strong><u>Step 3</u></strong>
     <u>: Understanding server side code(server.py)</u>
 </p>
-<code>
+<pre>
 
 from tornado import httpserver
 import tornado.websocket
@@ -145,7 +145,7 @@ if __name__ == "__main__":
 
 
 
-    </code>
+    </pre>
     <u>Step 4: Sending message to client using REST</u>
    
     <p>
